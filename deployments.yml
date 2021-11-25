@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: venketbio
+  name: newapp
 spec:
   replicas: 3
   strategy:
@@ -11,14 +11,14 @@ spec:
       maxUnavailable: 25%
   selector:
     matchLabels:
-      app: venketbio
+      app: newapp
   template:
     metadata:
       labels:
-        app: venketbio
+        app: newapp
     spec:
       containers:
       - image: 589589/venketbio:latest
-        name: venketbio
+        name: newapp
         ports:
-        - containerPort: 80
+        - containerPort: 8080
