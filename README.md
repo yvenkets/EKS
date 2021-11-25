@@ -52,6 +52,14 @@ kubectl create -f service.yml
 
 ```
 
+To Get nodes
+ kubectl get nodes
+TO get pods
+ kubectl get pods
+to Get service
+ kubectl get svc
+
+
 
   
 To delete the EKS clsuter
