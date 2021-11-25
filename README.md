@@ -37,7 +37,7 @@ Create your cluster and nodes
   
   ```
   eksctl create cluster --name=shivam-eksnew --region=ap-south-1 --node-type=t2.small --nodes-min=2 --nodes-max=2
-  
+  eksctl create cluster --name=shivam-ekst3 --region=ap-south-1 --node-type=t3.small --nodes-min=2 --nodes-max=2 --zones=ap-south-1a,ap-south-1b
   ```
   
 Create two yml files
