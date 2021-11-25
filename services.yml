@@ -4,7 +4,7 @@ metadata:
   name: venketbio
 spec:
   selector:
-    app: nodeapp
+    app: newapp
   ports:
   - protocol: TCP
     port: 80
