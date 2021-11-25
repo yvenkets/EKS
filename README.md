@@ -59,6 +59,13 @@ TO get pods
 to Get service
  kubectl get svc
 
+TO Get all deployment detail
+kubectl get deploy -A
+TO get all service details
+ kubectl get service -A
+
+kubectl delete deployment deployemnt name
+
 
 
   
