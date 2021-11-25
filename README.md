@@ -48,7 +48,7 @@ TO create the deployment and service
 
 ```
 kubectl create -f deployments.yml
-kubectl create -f service.yml
+kubectl create -f services.yml
 
 ```
 
