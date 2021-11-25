@@ -3,9 +3,12 @@
 
 Create one amazon linux 2 instance
 Update AWS CLi latest version
+
+```
    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
    unzip awscliv2.zip
    sudo ./aws/install
+```
 to verify the aws cli version
 
 Configure IAM USer credentials in this machine
@@ -52,22 +55,24 @@ kubectl create -f services.yml
 
 ```
 
-To Get nodes
- kubectl get nodes
-TO get pods
- kubectl get pods
-to Get service
- kubectl get svc
+_To Get nodes_
+ **kubectl get nodes**
+_TO get pods_
+** kubectl get pods**
+_to Get service_
+ **kubectl get svc**
 
-TO Get all deployment detail
-kubectl get deploy -A
-TO get all service details
- kubectl get service -A
-
-kubectl delete deployment deployemnt name
+_TO Get all deployment detail_
+**kubectl get deploy -A**
+_TO get all service details_
+ **kubectl get service -A**
+To Delete deployment 
+**kubectl delete deployment deployemnt name**
+_TO Delete service_
+**kubectl delete service service name**
 
 
 
   
-To delete the EKS clsuter
-  eksctl delete cluster cluster-name --region ap-south-1
+_To delete the EKS clsuter_
+  **eksctl delete cluster cluster-name --region ap-south-1**
