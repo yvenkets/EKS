@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: venketbio
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  selector:
+    matchLabels:
+      app: venketbio
+  template:
+    metadata:
+      labels:
+        app: venketbio
+    spec:
+      containers:
+      - image: 589589/venketbio:latest
+        name: venketbio
+        ports:
+        - containerPort: 80
